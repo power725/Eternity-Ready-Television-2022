@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":1,"key":{"_id":1},"name":"_id_","ns":"eternity-ready.channels"},{"v":1,"unique":true,"key":{"uniqueId":1},"name":"uniqueId_1","ns":"eternity-ready.channels","background":true}]}

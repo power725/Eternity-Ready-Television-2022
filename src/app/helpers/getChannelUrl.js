@@ -1,0 +1,1 @@
+export default (channel) => ('/watch/' + channel._id); //channel.slug ? channel.slug : channel.uniqueId;

@@ -1,0 +1,42 @@
+.content-ul {
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    float: right;
+    right: 0;
+    min-width: 180px;
+
+    margin: 0;
+    font-size: 15px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+
+    border: 1px solid #ccc;
+    border-radius: 0px;
+
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+
+    padding: 0;
+}
+
+.content-ul > li {
+    display: block;
+    padding: 5px 15px;
+}
+
+.content-ul > li > a {
+    color: #000000;
+    width: 100%;
+}
+
+.content-ul > li:hover {
+    background-color: #f0f0f0 !important;
+}
+
+.small-device {
+    display: block;
+    width: 100%;
+    margin-left: -15px;
+}

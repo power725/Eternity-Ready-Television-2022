@@ -1,0 +1,74 @@
+.admin2 .new-user-wrapper {
+    background-color: white;
+    padding: 0;
+    border-radius: 2px;
+}
+
+.admin3 .users-table-wrapper {
+    background-color: white;
+    color: black;
+    padding: 30px 20px 30px 20px;
+    border-radius: 2px;
+}
+
+.admin3 .users-table-wrapper table {
+    margin-bottom: 0;
+}
+
+.admin .user-row {
+
+}
+
+.admin .user-row td {
+    vertical-align: middle !important;
+    border: none !important;
+}
+
+.admin .user-row .td-index {
+    width: 35px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.admin .user-row .td-avatar {
+    width: 40px;
+    height: 40px;
+}
+
+.admin .user-row .td-avatar img{
+    height: 40px;
+}
+
+.admin .user-row .td-name {
+    vertical-align: top;
+}
+
+.admin .td-name .username {
+    color: #8c8c8c;
+}
+
+.admin .create-user {
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.admin .create-user td {
+    padding: 15px 20px;
+}
+
+.admin .create-user table {
+    width: 100%;
+}
+
+.admin .create-user input {
+    outline: none;
+    border: 1px solid #d3d3d4;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.admin .create-user input:focus {
+    outline: none;
+    box-shadow: none;
+
+}

@@ -1,0 +1,77 @@
+
+/*////////////////////////////////*/
+
+.topbar {
+    padding: 20px 0;
+    z-index: 10;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.topbar .right {
+    float: right;
+}
+
+.topbar .left {
+    float: left;
+}
+
+.topbar .ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.topbar .ul > li {
+    display: inline;
+    padding: 0 20px;
+}
+
+.topbar .ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+.topbar .brand {
+    height: 40px;
+    float: left;
+    margin-top: -10px;
+}
+
+.topbar .brand img {
+    height: 100%;
+}
+
+.topbar .show-small-device {
+}
+
+.topbar .show-small-device .ul {
+    width: 100%;
+    padding: 0;
+    padding-top: 10px;
+}
+
+.topbar .show-small-device .ul > li{
+    display: block;
+    width: 100%;
+    padding: 6px 0;
+}
+
+.topbar .expand-button {
+    right: 20px;
+    top: 10px;
+    position: absolute;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.topbar .user {
+    color: #fff;
+    float: right;
+}

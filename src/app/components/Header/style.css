@@ -1,0 +1,335 @@
+.headerDesktop {
+  width: 100%;
+  height: 70px;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,rgba(0,0,0,.7)),to(rgba(0,0,0,0)));
+  background-image: -webkit-linear-gradient(top,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+  background-image: -moz-linear-gradient(top,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+  background-image: -o-linear-gradient(top,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+  background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+  position: fixed;
+  z-index: 55;
+  opacity: 1;
+}
+.hideTopMenu {
+  display: none;
+}
+.headerDesktopOpaque {
+  background-color: rgba(0,0,0,.7);
+}
+
+.headerDesktop .mainMenuLink,
+.headerDesktop span a {
+  float: left;
+  color: white;
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 17px;
+  text-shadow: 0px 0px 18px #969696;
+  cursor: pointer;
+}
+
+.headerDesktop span a:hover {
+  color: white;
+}
+
+.headerDesktop > img {
+  float: left;
+  width: 85px;
+  margin: 20px 20px 0 20px;
+  position: relative;
+  z-index: 4;
+}
+
+.headerDesktop a {
+  text-decoration: none;
+}
+
+.dropdown:before {
+  color: #C70000;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.dropdown:after {
+  content: "Television ▾";
+  font-weight: bold;
+  padding-left: 4px;
+  color: #d60000;
+}
+
+.dropdown {
+  font-weight: bold;
+}
+
+.headerDesktop span a:hover {
+  color: red;
+}
+
+.dropdiv {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 140px;
+  z-index: 99999;
+  background: rgba(17, 17, 17, 0.94);
+}
+
+.sectiondrop {
+  display: block;
+  float: left;
+  opacity: 1;
+  padding: 5px;
+}
+
+.sectiondrop li {
+  display: block;
+  padding: 1px;
+  width: 100%;
+  height: 30px;
+}
+
+.sectiondrop li a {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-size: 13px;
+}
+
+.sectiondrop:first-child {
+  border-right: 1px solid #666666;
+  display: block;
+  line-height: 27px;
+}
+
+.headerDesktop .sectiondrop li a {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+@media (min-width: 400px) {
+  .headerDesktop > img {
+    width: 105px;
+  }
+}
+/* Menu Icon */
+#menu-icon {
+  margin: 20px 0 0 20px;
+  width: 40px;
+  height: 23px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  z-index: 4;
+  float: left;
+}
+
+#menu-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 90%;
+  background: #fff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+#menu-icon span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
+      transform-origin: left center;
+}
+
+#menu-icon span:nth-child(2) {
+  top: 10px;
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
+      transform-origin: left center;
+}
+
+#menu-icon span:nth-child(3) {
+  top: 20px;
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
+      transform-origin: left center;
+}
+
+#menu-icon.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+  top: -2px;
+}
+
+#menu-icon.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#menu-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+  top: 23px;
+}
+
+/* Menu CSS */
+nav#main-menu {
+  background: #00262B;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  /*        top: 65px;*/
+  top: 0;
+  bottom: 0;
+  padding-top: 65px;
+}
+
+ul.menu {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+ul.menu > li {
+  list-style-type: none;
+}
+
+ul.column > li {
+  width: 50%;
+  display: inline-block;
+  line-height: 30px;
+  color: #fff;
+}
+
+ul.menu > li > a > span {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+ul.menu > li > ul > li {
+  color: #CECECE;
+  line-height: 30px;
+  list-style-type: none;
+}
+
+ul.menu > li > ul > li > a {
+  color: #CECECE;
+  text-decoration: none;
+  padding-right: 15px;
+}
+
+ul.menu > li > ul:nth-child(2) > li > a > span {
+  text-transform: uppercase;
+}
+
+ul.menu > li > ul {
+  margin: 10px 0;
+}
+
+ul.menu > li > ul > li > ul {
+  margin: 10px 20px;
+}
+
+ul.menu > li > ul > li > ul {
+  display: none;
+}
+
+ul.menu > li > ul > li > ul > li > a {
+  color: #CECECE;
+  text-decoration: none;
+}
+
+/* Top Element */
+nav#main-menu > .top-el {
+  padding: 20px 0 0 20px;
+  color: #fff !important;
+}
+
+.top-el > .account-icon {
+  margin-right: 20px;
+  line-height: 40px;
+  margin-left: 5vw;
+}
+
+@media (min-width: 400px) {
+  ul.menu > li > ul {
+    margin: 10px;
+  }
+
+  div.header > img {
+    width: 105px !important;
+  }
+}
+div.header > .mobileHeaderTop > img {
+  width: 85px;
+  float: right;
+  margin: 20px 20px 0 0;
+  position: relative;
+  z-index: 4;
+  float: left;
+  margin-left: 5px;
+}
+
+#header-mobile {
+  width: 100%;
+  height: 65px;
+  z-index: 4;
+  position: fixed;
+  background-color: rgba(0, 38, 43, 0.8);
+}
+
+@media (max-width: 400px) {
+  .top-el > .account-icon {
+    display: block;
+    clear: both;
+    margin-top: 5px;
+    margin-left: 0;
+  }
+}
+
+
+/* */
+.userdropdown-content-ul {
+  background: rgba(17, 17, 17, 0.94);
+  color: white;
+  float: right;
+  font-size: 15px;
+  list-style: none;
+  margin: 0;
+  min-width: 200px;
+  padding: 10px;
+  position: absolute;
+  right: 15px;
+  text-align: left;
+  top: 110%;
+  z-index: 1000;
+}
+
+.userdropdown-content-ul > li {
+  display: block;
+  padding: 5px 15px;
+}
+
+.userdropdown-content-ul > li > a {
+  color: #000000 !important;
+  width: 100%;
+}
+
+.userdropdown-content-ul > li:hover {
+  color: #C70000;
+}

@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+    head
+        title Auth
+        script(type='text/javascript').
+            var token = "#{token}";
+            var user = !{user};
+            var success = !{success};
+
+            if (window.opener)
+
+                window.opener.oauthHandler({
+                    success: success,
+                    token: token,
+                    user: user
+                });
+
+                window.close();
+
+body
+    h1 OAuth

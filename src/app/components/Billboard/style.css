@@ -1,0 +1,186 @@
+.billboard {
+    /* todo fix to local url
+  background-image: url('./resources/rapture.jpg');
+  */
+  position: relative;
+  height: 90vh;
+  background-image: url('https://i.ytimg.com/vi/L0uWsVDxNsQ/maxresdefault.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  color: white;
+  box-shadow: inset 0px -81px 103px 50px rgba(0,0,0,0.81);
+}
+.billboard .container {
+    margin: 0;
+    padding: 0;
+    height: 90vh;
+    position: relative;
+}
+.billboard .hero-gradient {
+    background-image: linear-gradient(90deg,#000 0,transparent 72%,transparent);
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    left: 0;
+}
+.billboard .intro-text-wrapper {
+    background: transparent;
+    cursor: default;
+    height: 90vh;
+    position: absolute;
+    top: 0;
+    width: 300px;
+}
+.billboard .intro-text-wrapper .intro-text {
+    bottom: 20px;
+    padding-left: 18px;
+    padding-right: 10px;
+    padding: 0 10px 0 15px;
+    position: absolute;
+    top: 20px;
+    width: 380px;
+}
+.billboard .intro-text-wrapper .intro-text .intro-lead-in {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 35px;
+  max-width: 500px;
+}
+.billboard .intro-text-wrapper .intro-text .intro-heading {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 15px;
+  margin-top: 65px;
+}
+.billboard .intro-text-wrapper .intro-text .intro-heading span {
+  font-size: 15px;
+  color: #9c3423;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .billboard .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px;
+    font-size: 14px !important;
+  }
+  .billboard .intro-text .intro-lead-in {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+  .billboard .intro-text .intro-heading {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 75px;
+    margin-bottom: 50px;
+  }
+  .billboard .hero-gradient {
+    background-image: linear-gradient(90deg,#000 0,transparent 45%,transparent);
+    height: 90vh;
+    width: calc(100% - 300px);
+    position: relative;
+    left: 300px;
+  }
+  .billboard .intro-text-wrapper {
+    background: black;
+    height: 90vh;
+    position: absolute;
+    top: 0;
+    width: 300px;
+  }
+}
+.hero-vignette {
+    background-image: -moz-linear-gradient(top,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.38) 29%,rgba(20,20,20,.68) 44%,#141414 58%,#141414 100%);
+    background-image: -o-linear-gradient(top,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.38) 29%,rgba(20,20,20,.68) 44%,#141414 58%,#141414 100%);
+    background-image: linear-gradient(to bottom,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.38) 29%,rgba(20,20,20,.68) 44%,#141414 58%,#141414 100%);
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-position: 0 top;
+    background-repeat: repeat-x;
+    background-color: transparent;
+    width: 100%;
+    height: 22.8vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 3vw;
+}
+.search-input button{
+    border: none;
+}
+.btn-transparent {
+    background: transparent;
+    border: 3px solid #fff;
+    padding: 15px 30px;
+    font-size: 14px;
+    border-radius: 0;
+    color: #fff;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: uppercase
+}
+
+.btn-transparent:active,.btn-transparent:focus,.btn-transparent:hover {
+    background: #fff;
+    color: #0d0d0d;
+    text-decoration: none
+}
+
+.btn-light {
+    background: #e50914;
+    border: 3px solid #ff0a16;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 0;
+    color: #fff;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: uppercase
+}
+
+.btn-light:active,.btn-light:focus,.btn-light:hover {
+    background: #ff0a16;
+    color: #fff;
+    text-decoration: none
+}
+
+.btn-block {
+    background: #24242a;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 0;
+    color: #fff;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    border: 3px solid #24242a
+}
+
+.btn-block:active,.btn-block:focus,.btn-block:hover {
+    background: #fff;
+    color: #0d0d0d;
+    text-decoration: none
+}
